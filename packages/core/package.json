@@ -1,0 +1,22 @@
+{
+  "name": "smede-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "files": [
+    "./src/**/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "smede-hooks": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26"
+  }
+}

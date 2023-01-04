@@ -25,7 +25,7 @@ export default function useInnerMove<T extends HTMLElement = HTMLDivElement>(
   const frame = useRef(0);
 
   useEffect(() => {
-    const toScrub = ({ x, y}: UseInnerMovePosition) => {
+    const toScrub = ({ x, y }: UseInnerMovePosition) => {
       cancelAnimationFrame(frame.current);
 
       frame.current = requestAnimationFrame(() => {
@@ -36,7 +36,8 @@ export default function useInnerMove<T extends HTMLElement = HTMLDivElement>(
 
           if (rect.width && rect.height) {
             const _x = clamp(0, (x - rect.left) / rect.width, 1);
-            onChange({ x: _x, y: clamp(0, (y - rect.top) / rect.height, 1), });
+            const _y =  clamp(0, (y - rect.top) / rect.height, 1);
+            onChange({ x: _x, y: _y, });
           }
         }
       })
@@ -107,13 +108,13 @@ export default function useInnerMove<T extends HTMLElement = HTMLDivElement>(
       document.removeEventListener('touchend', onTouchEnd);
     }
 
-    document.addEventListener('mousedown', onMouseDown);
-    document.addEventListener('touchstart', onTouchStart);
+    ref.current?.addEventListener('mousedown', onMouseDown);
+    ref.current?.addEventListener('touchstart', onTouchStart, { passive: false });
 
     return () => {
       if (ref.current) {
-        document.removeEventListener('mousedown', onMouseDown);
-        document.removeEventListener('touchstart', onTouchStart);
+        ref.current.removeEventListener('mousedown', onMouseDown);
+        ref.current.removeEventListener('touchstart', onTouchStart);
       }
     }
   }, [onChange]);

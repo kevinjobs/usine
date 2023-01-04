@@ -4,7 +4,8 @@
   "description": "A web front forge. Semde means FORGE in Dansk.",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm --filter * run build"
+    "build": "pnpm --filter * run build",
+    "dev": "pnpm build && pnpm --filter smede-docs start"
   },
   "keywords": [],
   "author": "Kevin Jobs <me@kevinjobs.com>",
