@@ -1,0 +1,16 @@
+{
+  "name": "smede-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "files": ["./dist/**/*"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}

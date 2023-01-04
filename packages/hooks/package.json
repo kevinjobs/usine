@@ -1,0 +1,21 @@
+{
+  "name": "smede-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "files": ["./src/**/*"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "smede-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "typescript": "^4.9.4"
+  }
+}
