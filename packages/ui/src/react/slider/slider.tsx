@@ -12,22 +12,26 @@ export default function Slider(props: SliderProps) {
 
   const styles = {
     slider: {
+      position: 'relative',
       height: 16,
-    },
+    } as React.CSSProperties,
     track: {
       height: 'inherit',
       backgroundColor: '#dedede',
-    },
+    } as React.CSSProperties,
     filled: {
       height: 'inherit',
-      width: `calc(${position.x * 100}%)`,
+      width: `${position.x * 100}%`,
       backgroundColor: '#101010',
-    },
+    } as React.CSSProperties,
     thumb: {
+      position: 'absolute',
       height: 16,
       width: 16,
-      backgroundColor: isActived ? '#ec4242' : '#212223',
-    }
+      backgroundColor: isActived ? '#ec4242' : '#41a6de',
+      left: `calc(${position.x * 100}% - 8px)`,
+      top: 0,
+    } as React.CSSProperties,
   }
 
   return (
@@ -38,8 +42,8 @@ export default function Slider(props: SliderProps) {
     >
       <div className={'smede-slider-track'} style={styles.track}>
         <div className={'smede-slider-track-filled'} style={styles.filled}>
-          <div className={'smede-slider-thumb'} style={styles.thumb}></div>
         </div>
+        <div className={'smede-slider-thumb'} style={styles.thumb}></div>
       </div>
     </div>
   )

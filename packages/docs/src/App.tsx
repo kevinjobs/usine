@@ -1,11 +1,13 @@
 import { LegacyRef, useState } from 'react';
 import './App.css';
-import { Slider } from 'smede-core';
+import { Slider } from 'smede-ui/react';
 
 function App() {
   return (
     <div className="App">
-      <Slider onChange={console.log} />
+      <div className={'box'} style={{width: 300, marginLeft: 30}}>
+        <Slider onChange={console.log} />
+      </div>
     </div>
   );
 }

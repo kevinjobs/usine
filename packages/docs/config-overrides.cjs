@@ -11,6 +11,7 @@ module.exports = {
   },
   paths: function(paths, env) {
     if (env === 'development') {
+      // make smede/packages/**/* as app src
       paths.appSrc = path.join(__dirname, '../../');
       return paths;
     }

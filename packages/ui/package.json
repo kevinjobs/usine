@@ -1,0 +1,39 @@
+{
+  "name": "smede-ui",
+  "version": "1.0.1",
+  "description": "",
+  "type": "module",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "dev": "rollup --config rollup.config.js --watch"
+  },
+  "browser": {
+    "./react": "./es/react/index.js"
+  },
+  "exports": {
+    "./react": {
+      "import": "./es/react/index.js",
+      "types": "./dist/react/index.d.ts",
+      "require": "./lib/react/index.cjs",
+      "default": "./dist/react/index.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "smede-hooks": "workspace:*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@types/react": "^18.0.26",
+    "rollup": "^3.9.1"
+  }
+}

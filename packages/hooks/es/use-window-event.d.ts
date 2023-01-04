@@ -1,0 +1,1 @@
+export default function useWindowEvent<K extends string>(evType: K, listener: K extends keyof WindowEventMap ? (this: Window, ev: WindowEventMap[K]) => void : EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
