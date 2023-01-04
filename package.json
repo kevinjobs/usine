@@ -1,0 +1,12 @@
+{
+  "name": "smede",
+  "version": "1.0.0",
+  "description": "A web front forge. Semde means FORGE in Dansk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kevin Jobs <me@kevinjobs.com>",
+  "license": "MIT"
+}
