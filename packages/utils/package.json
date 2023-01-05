@@ -2,18 +2,17 @@
   "name": "smede-utils",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
   "type": "module",
   "files": [
     "dist",
     "es",
-    "lib"
+    "cjs"
   ],
   "exports": {
     ".": {
-      "import": "./es/index.js",
-      "require": "./lib/index.cjs",
       "default": "./dist/index.js",
+      "import": "./es/index.js",
+      "require": "./cjs/index.cjs",
       "types": "./dist/index.d.ts"
     }
   },

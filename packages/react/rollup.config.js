@@ -12,8 +12,8 @@ export default defineConfig([
     ],
     output: [
       {
-        name: 'umd',
-        file: './dist/react/index.js',
+        name: 'smede-react',
+        file: './dist/index.js',
         format: 'umd',
         globals: {
           react: 'React',
@@ -21,14 +21,14 @@ export default defineConfig([
         }
       },
       {
-        name: 'es',
-        file: './es/react/index.js',
+        name: 'smede-react',
+        file: './es/index.js',
         format: 'es',
       },
       {
-        name: 'commonjs',
-        file: './lib/react/index.cjs',
-        format: 'commonjs',
+        name: 'smede-react',
+        file: './cjs/index.cjs',
+        format: 'cjs',
       }
     ]
   }

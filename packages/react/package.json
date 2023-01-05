@@ -1,5 +1,5 @@
 {
-  "name": "smede-ui",
+  "name": "@smede/react",
   "version": "1.0.1",
   "description": "",
   "type": "module",
@@ -16,11 +16,11 @@
     "./react": "./es/react/index.js"
   },
   "exports": {
-    "./react": {
-      "import": "./es/react/index.js",
-      "types": "./dist/react/index.d.ts",
-      "require": "./lib/react/index.cjs",
-      "default": "./dist/react/index.js"
+    ".": {
+      "default": "./dist/index.js",
+      "import": "./es/index.js",
+      "require": "./cjs/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "keywords": [],
