@@ -22,7 +22,7 @@ export default function Slider(props: SliderProps) {
     filled: {
       height: 'inherit',
       width: `${position.x * 100}%`,
-      backgroundColor: '#101010',
+      backgroundColor: '#323233',
     } as React.CSSProperties,
     thumb: {
       position: 'absolute',

@@ -1,0 +1,8 @@
+.component-sidenav .sidenav-item a {
+  text-decoration: none;
+  color: #313233;
+}
+
+.component-sidenav .sidenav-item.actived {
+  background-color: aliceblue;
+}
