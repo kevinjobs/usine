@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { clamp } from 'smede-utils';
+import { clamp } from '@smede/utils';
 
 export interface UseInnerMovePosition {
   x: number;

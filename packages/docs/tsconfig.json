@@ -19,13 +19,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "paths": {
-      "smede-ui/*": [
-        "node_modules/smede-ui/dist/*",
-        "node_modules/smede-ui/es/*",
-        "node_modules/smede-ui/lib/*"
-      ]
-    }
+    "baseUrl": "."
   },
   "include": [
     "src",

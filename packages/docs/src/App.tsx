@@ -1,8 +1,8 @@
-import { LegacyRef, useState } from 'react';
+import React from 'react';
 import './App.css';
-import { Slider } from 'smede-ui/react';
+import { Slider } from '@smede/react';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className={'box'} style={{width: 300, marginLeft: 30}}>
@@ -11,5 +11,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

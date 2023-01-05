@@ -1,5 +1,5 @@
 import React from 'react';
-import { useInnerMove } from "smede-hooks";
+import { useInnerMove } from "@smede/hooks";
 
 export interface SliderProps {
   onChange?(value: number): void;

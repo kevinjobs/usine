@@ -1,8 +1,9 @@
 {
-  "name": "smede-utils",
+  "name": "@smede/utils",
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "main": "./dist/index.js",
   "files": [
     "dist",
     "es",
@@ -10,10 +11,10 @@
   ],
   "exports": {
     ".": {
-      "default": "./dist/index.js",
       "import": "./es/index.js",
       "require": "./cjs/index.cjs",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "scripts": {

@@ -3,9 +3,10 @@
   "version": "1.0.1",
   "description": "",
   "type": "module",
+  "main": "./dist/index.js",
   "files": [
     "dist",
-    "lib",
+    "cjs",
     "es"
   ],
   "scripts": {
@@ -17,10 +18,10 @@
   },
   "exports": {
     ".": {
-      "default": "./dist/index.js",
       "import": "./es/index.js",
       "require": "./cjs/index.cjs",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "keywords": [],
@@ -28,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
-    "smede-hooks": "workspace:*"
+    "@smede/hooks": "workspace:*"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",

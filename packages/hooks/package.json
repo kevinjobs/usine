@@ -1,12 +1,13 @@
 {
-  "name": "smede-hooks",
+  "name": "@smede/hooks",
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "main": "./dist/index.js",
   "files": [
     "dist",
     "es",
-    "lib"
+    "cjs"
   ],
   "scripts": {
     "dev": "rollup --config rollup.config.js --watch",
@@ -14,10 +15,10 @@
   },
   "exports": {
     ".": {
-      "default": "./dist/index.js",
       "import": "./es/index.js",
       "require": "./cjs/index.cjs",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "keywords": [],
@@ -25,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
-    "smede-utils": "workspace:*"
+    "@smede/utils": "workspace:*"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^10.0.1",

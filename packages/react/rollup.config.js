@@ -4,11 +4,11 @@ import resolve from '@rollup/plugin-node-resolve';
 
 export default defineConfig([
   {
-    input: 'src/react/index.ts',
-    external: ['react', 'react-dom'],
+    input: 'src/index.ts',
+    external: ['react', 'react-dom', '@smede/hooks'],
     plugins: [
       typescript(),
-      resolve(),
+      // resolve(),
     ],
     output: [
       {
@@ -18,17 +18,28 @@ export default defineConfig([
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          '@smede/hooks': 'semde-hooks'
         }
       },
       {
         name: 'smede-react',
         file: './es/index.js',
         format: 'es',
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+          '@smede/hooks': 'semde-hooks'
+        }
       },
       {
         name: 'smede-react',
         file: './cjs/index.cjs',
         format: 'cjs',
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+          '@smede/hooks': 'semde-hooks'
+        }
       }
     ]
   }
