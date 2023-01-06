@@ -14,7 +14,7 @@
     "dev": "rollup --config rollup.config.js --watch"
   },
   "browser": {
-    "./react": "./es/react/index.js"
+    ".": "./es/react/index.js"
   },
   "exports": {
     ".": {

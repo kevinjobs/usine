@@ -1,6 +1,6 @@
 import { defineConfig } from 'rollup';
 import typescript from '@rollup/plugin-typescript';
-import resolve from '@rollup/plugin-node-resolve';
+// import resolve from '@rollup/plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
 
 export default defineConfig([

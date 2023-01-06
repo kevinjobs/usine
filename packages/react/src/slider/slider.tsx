@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInnerMove } from "@usine/hooks";
+import colors from '../colors';
 
 export interface SliderProps {
   onChange?(value: number): void;
@@ -10,28 +11,28 @@ export default function Slider(props: SliderProps) {
   const [ position, setPosition ] = React.useState({ x: 0, y: 0 });
   const { ref, isActived } = useInnerMove(setPosition);
 
-  const styles = {
+  const styles: { [key: string]: React.CSSProperties } = {
     slider: {
       position: 'relative',
       height: 16,
-    } as React.CSSProperties,
+    },
     track: {
       height: 'inherit',
-      backgroundColor: '#dedede',
-    } as React.CSSProperties,
+      backgroundColor: colors.gray[1],
+    },
     filled: {
       height: 'inherit',
       width: `${position.x * 100}%`,
-      backgroundColor: '#919293',
-    } as React.CSSProperties,
+      backgroundColor: colors.gray[7],
+    },
     thumb: {
       position: 'absolute',
       height: 16,
       width: 16,
-      backgroundColor: isActived ? '#ec4242' : '#41a6de',
+      backgroundColor: isActived ? colors.red[5] : colors.blue[5],
       left: `calc(${position.x * 100}% - 8px)`,
       top: 0,
-    } as React.CSSProperties,
+    },
   }
 
   return (
