@@ -1,6 +1,6 @@
 {
   "name": "@usine/utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
@@ -20,10 +20,10 @@
   "scripts": {
     "dev": "rollup --config rollup.config.js --watch",
     "build": "rollup --config rollup.config.js",
-    "publish": "npm publish"
+    "publish": "npm publish --access public"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kevin Jobs",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^10.0.1",
