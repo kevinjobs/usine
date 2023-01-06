@@ -1,10 +1,10 @@
 {
-  "name": "@smede/docs",
+  "name": "@usine/docs",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "dependencies": {
-    "@smede/react": "workspace:*",
+    "@usine/react": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1"

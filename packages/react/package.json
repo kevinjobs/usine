@@ -1,5 +1,5 @@
 {
-  "name": "@smede/react",
+  "name": "@usine/react",
   "version": "1.0.1",
   "description": "",
   "type": "module",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
-    "@smede/hooks": "workspace:*"
+    "@usine/hooks": "workspace:*"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",

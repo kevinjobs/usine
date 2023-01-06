@@ -1,5 +1,5 @@
 {
-  "name": "@smede/hooks",
+  "name": "@usine/hooks",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
-    "@smede/utils": "workspace:*"
+    "@usine/utils": "workspace:*"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^10.0.1",
