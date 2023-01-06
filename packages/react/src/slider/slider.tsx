@@ -3,13 +3,22 @@ import { useInnerMove } from "@usine/hooks";
 import colors from '../colors';
 
 export interface SliderProps {
+  defaultValue?: number;
   onChange?(value: number): void;
   onChangeEnd?(value: number): void;
 }
 
 export default function Slider(props: SliderProps) {
-  const [ position, setPosition ] = React.useState({ x: 0, y: 0 });
-  const { ref, isActived } = useInnerMove(setPosition);
+  const { defaultValue=0, onChange, onChangeEnd } = props;
+
+  const [ position, setPosition ] = React.useState({ x: defaultValue, y: 0 });
+
+  const handleChange = React.useCallback(({ x, y }: { x: number; y: number}) => {
+    setPosition({x,y});
+    if (onChange) onChange(x);
+  }, []);
+
+  const { ref, isActived } = useInnerMove(handleChange);
 
   const styles: { [key: string]: React.CSSProperties } = {
     slider: {

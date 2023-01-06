@@ -1,5 +1,6 @@
 import React from 'react';
 import colors, { ColorType } from "../colors";
+import sizes, { SizeType } from "../sizes";
 
 type VariantType = 'filled' | 'light' | 'outline' | 'subtle' | 'default';
 
@@ -7,19 +8,21 @@ type ButtonProps = {
   color?: ColorType;
   children?: React.ReactNode;
   variant?: VariantType;
+  size?: SizeType;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 function B(props: ButtonProps) {
   const {
     color='blue',
     variant='default',
+    size='sm',
     children,
     ...rest
   } = props;
 
   const [isHover, setIsHover] = React.useState(false);
 
-  const getStyles = React.useCallback((v: VariantType, c: ColorType) :React.CSSProperties => {
+  const getStyles = (v: VariantType, c: ColorType) :React.CSSProperties => {
     switch(v) {
       case 'filled':
         return {
@@ -52,20 +55,19 @@ function B(props: ButtonProps) {
           border: '1px solid transparent',
         };
     }
-  }, [isHover]);
+  }
 
-  const styles: React.CSSProperties = React.useMemo(() => ({
+  const styles: React.CSSProperties = {
     borderRadius: 4,
     padding: '8px 16px',
     fontWeight: 600,
+    fontSize: sizes[size],
     cursor: 'pointer',
     ...getStyles(variant, color),
-  }), [isHover, variant, color]);
+  }
 
-  const cls = React.useMemo(() => (
-    `usine-button variant-${variant} color-${color}`
+  const cls = `usine-button variant-${variant} color-${color}`
     + (rest.className ? ' ' + rest.className : '')
-  ), [variant, color]);
 
   return (
     <button
@@ -80,6 +82,4 @@ function B(props: ButtonProps) {
   );
 }
 
-const Button = React.memo(B);
-
-export { Button, type ButtonProps, type VariantType }
+export { B as Button, type ButtonProps, type VariantType }
