@@ -28,13 +28,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "react": "^18.2.0",
-    "@usine/hooks": "workspace:*"
+    "@usine/hooks": "workspace:*",
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^10.0.1",
     "@types/react": "^18.0.26",
-    "rollup": "^3.9.1"
+    "rollup": "^3.9.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.4.1"
   }
 }

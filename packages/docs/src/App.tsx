@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SliderDoc from './pages/slider.doc';
+import ButtonDoc from './pages/buton.doc';
 import { SideNav } from './components/sidenav';
 import './App.css';
 
@@ -13,7 +14,7 @@ const items = [
   {
     title: 'Button',
     path: '/component/button',
-    element: <div>Button</div>,
+    element: <ButtonDoc />,
   }
 ];
 

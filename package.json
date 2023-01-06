@@ -10,6 +10,8 @@
   "author": "Kevin Jobs <me@kevinjobs.com>",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.4.1"
   }
 }
