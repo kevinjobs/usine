@@ -12,7 +12,7 @@ importers:
       rollup-plugin-postcss: 4.0.2
       tslib: 2.4.1
 
-  packages/docs:
+  docs:
     specifiers:
       '@testing-library/jest-dom': ^5.16.5
       '@testing-library/react': ^13.4.0
@@ -30,7 +30,7 @@ importers:
       typescript: ^4.9.4
       web-vitals: ^2.1.4
     dependencies:
-      '@usine/react': link:../react
+      '@usine/react': link:../packages/react
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-router-dom: 6.6.1_biqbaboplfbrettd7655fr4n2y
@@ -10221,6 +10221,7 @@ packages:
 
   /w3c-hr-time/1.0.2:
     resolution: {integrity: sha512-z8P5DvDNjKDoFIHK7q8r8lackT6l+jo/Ye3HOle7l9nICP9lf1Ci25fy9vHd0JOWewkIFzXIEig3TdKT7JQ5fQ==}
+    deprecated: Use your platform's native performance.now() and performance.timeOrigin.
     dependencies:
       browser-process-hrtime: 1.0.0
     dev: true
