@@ -1,5 +1,5 @@
 {
-  "name": "@smede/utils",
+  "name": "@usine/utils",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -19,7 +19,8 @@
   },
   "scripts": {
     "dev": "rollup --config rollup.config.js --watch",
-    "build": "rollup --config rollup.config.js"
+    "build": "rollup --config rollup.config.js",
+    "publish": "npm publish"
   },
   "keywords": [],
   "author": "",
