@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "A web front forge. Semde means FORGE in Dansk.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "concurrently \"pnpm -F @usine/utils dev\" \"pnpm -F @usine/hooks dev\" \"pnpm -F @usine/react dev\" \"pnpm -F @usine/docs dev\""
+  },
   "keywords": [],
   "author": "Kevin Jobs <me@kevinjobs.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
 }

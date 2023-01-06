@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "rollup --config rollup.config.js --watch",
     "build": "rollup --config rollup.config.js",
-    "publish": "npm publish --access public"
+    "publish": "npm --access public publish --no-git-checks"
   },
   "keywords": [],
   "author": "Kevin Jobs",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useInnerMove } from "@smede/hooks";
+import { useInnerMove } from "@usine/hooks";
 
 export interface SliderProps {
   onChange?(value: number): void;
@@ -22,7 +22,7 @@ export default function Slider(props: SliderProps) {
     filled: {
       height: 'inherit',
       width: `${position.x * 100}%`,
-      backgroundColor: '#323233',
+      backgroundColor: '#919293',
     } as React.CSSProperties,
     thumb: {
       position: 'absolute',

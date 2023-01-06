@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slider } from '@smede/react';
+import { Slider } from '@usine/react';
 
 export default function SliderDoc() {
   return (
