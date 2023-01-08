@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@usine/peau": "workspace:^1.0.0",
     "@usine/react": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

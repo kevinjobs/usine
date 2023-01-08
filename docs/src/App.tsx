@@ -4,6 +4,7 @@ import SliderDoc from './pages/slider.doc';
 import ButtonDoc from './pages/buton.doc';
 import { SideNav } from './components/sidenav';
 import './App.css';
+import { UsineProvider } from '@usine/peau';
 
 const items = [
   {
@@ -55,18 +56,20 @@ const styles: Styles = {
 
 export default function App() {
   return (
-    <div className="App" style={styles.app}>
-      <div className='header' style={styles.header}>
-        <div className='logo' style={styles.logo}>Smede UI</div>
-      </div>
-      <div className='main' style={styles.main}>
-        <div className='left' style={styles.left}>
-          <SideNav items={items} />
+    <UsineProvider>
+      <div className="App" style={styles.app}>
+        <div className='header' style={styles.header}>
+          <div className='logo' style={styles.logo}>Smede UI</div>
         </div>
-        <div className='right' style={styles.right}>
-          <RouterProvider router={router} />
+        <div className='main' style={styles.main}>
+          <div className='left' style={styles.left}>
+            <SideNav items={items} />
+          </div>
+          <div className='right' style={styles.right}>
+            <RouterProvider router={router} />
+          </div>
         </div>
       </div>
-    </div>
+    </UsineProvider>
   );
 }

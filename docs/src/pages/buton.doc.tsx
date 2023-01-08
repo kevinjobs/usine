@@ -1,7 +1,10 @@
 import React from 'react';
 import { Button, Slider, VariantType, ColorType, SizeType } from '@usine/react';
+import { useUsineTheme } from '@usine/peau';
 
 export default function SliderDoc() {
+  const theme = useUsineTheme();
+
   const [variant, setVariant] = React.useState<VariantType>('filled');
   const [color, setColor] = React.useState<ColorType>('blue');
   const [size, setSize] = React.useState<SizeType>('xl');
@@ -13,6 +16,8 @@ export default function SliderDoc() {
     else if (value > 0.2) setSize('sm');
     else setSize('xs');
   }
+  
+  console.log(theme);
 
   return (
     <div className={'box'}>
