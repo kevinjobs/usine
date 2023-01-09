@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "node ./scripts/dev.js",
-    "npm:publish": "pnpm -F * build && pnpm -F * publish"
+    "npm:publish": "pnpm -F * build && pnpm -F * pub",
+    "npm:unpublish": "pnpm -F * unpub"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@usine/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "rollup --config rollup.config.js --watch",
     "build": "rollup --config rollup.config.js",
-    "publish": "npm --access public publish --no-git-checks"
+    "pub": "npm --access public publish --no-git-checks",
+    "unpub": "npm unpublish --no-git-checks --force"
   },
   "keywords": [],
   "author": "Kevin Jobs",

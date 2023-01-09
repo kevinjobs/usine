@@ -1,6 +1,6 @@
 {
   "name": "@usine/peau",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "type": "module",
@@ -20,7 +20,8 @@
   "scripts": {
     "build": "rollup --config rollup.config.js",
     "dev": "rollup --config rollup.config.js --watch",
-    "publish": "npm --access public publish --no-git-checks"
+    "pub": "npm --access public publish --no-git-checks",
+    "unpub": "npm unpublish --no-git-checks --force"
   },
   "keywords": [],
   "author": "",

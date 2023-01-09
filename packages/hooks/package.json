@@ -1,6 +1,6 @@
 {
   "name": "@usine/hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "rollup --config rollup.config.js --watch",
     "build": "rollup --config rollup.config.js",
-    "publish": "npm --access public publish --no-git-checks"
+    "pub": "npm --access public publish --no-git-checks",
+    "unpub": "npm unpublish --no-git-checks --force"
   },
   "exports": {
     ".": {
