@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "build": "rollup --config rollup.config.js",
-    "dev": "rollup --config rollup.config.js --watch"
+    "dev": "rollup --config rollup.config.js --watch",
+    "publish": "npm --access public publish --no-git-checks"
   },
   "browser": {
     ".": "./es/react/index.js"

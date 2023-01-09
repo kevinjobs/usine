@@ -3,3 +3,4 @@ cjs
 dist
 .eslintrc.js
 *.d.ts
+*.js

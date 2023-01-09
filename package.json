@@ -15,6 +15,7 @@
     "shelljs": "^0.8.5"
   },
   "scripts": {
-    "dev": "node ./scripts/dev.js"
+    "dev": "node ./scripts/dev.js",
+    "npm:publish": "pnpm -F * build && pnpm -F * publish"
   }
 }

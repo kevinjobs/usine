@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "dev": "rollup --config rollup.config.js --watch",
-    "build": "rollup --config rollup.config.js"
+    "build": "rollup --config rollup.config.js",
+    "publish": "npm --access public publish --no-git-checks"
   },
   "exports": {
     ".": {
