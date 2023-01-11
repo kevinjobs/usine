@@ -1,7 +1,7 @@
 {
   "name": "usine",
   "version": "1.0.0",
-  "description": "A web front forge. Semde means FORGE in Dansk.",
+  "description": "A web front framework. Usine means FACTORY in French.",
   "repository": "https://github.com/kevinjobs/usine.git",
   "keywords": [
     "react",
