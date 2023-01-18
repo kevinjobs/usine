@@ -9,7 +9,7 @@ export default defineConfig([
     ],
     output: [
       {
-        name: 'smede-utils',
+        name: 'usine-peau',
         file: './dist/index.js',
         format: 'umd',
         globals: {
@@ -18,12 +18,12 @@ export default defineConfig([
         }
       },
       {
-        name: 'smede-utils',
+        name: 'usine-peau',
         file: './es/index.js',
         format: 'es',
       },
       {
-        name: 'smede-utils',
+        name: 'usine-peau',
         file: './cjs/index.cjs',
         format: 'cjs',
       }

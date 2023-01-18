@@ -13,4 +13,4 @@ export type UsineColor =
   | 'lime'
   | 'yellow'
   | 'orange'
-  | (string & {});
+  | (string & Record<string, never>);

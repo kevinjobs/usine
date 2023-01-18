@@ -4,8 +4,8 @@ const sizes = {
   'md': 16,
   'lg': 18,
   'xl': 20,
-}
+};
 
 type SizeType = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
-export { sizes as default, type SizeType }
+export { sizes as default, type SizeType };
