@@ -17,4 +17,13 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always', { "omitLastInOneLineBlock": true }],
   },
+  ignorePatterns: [
+    '.eslintrc.js',
+    'scripts/*',
+    'cjs/*',
+    'es/*',
+    'dist/*',
+    '*.js',
+    '*.d.ts'
+  ]
 };
