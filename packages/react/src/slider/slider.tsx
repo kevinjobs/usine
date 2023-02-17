@@ -3,8 +3,21 @@ import { useInnerMove } from "@usine/hooks";
 import colors from '../colors';
 
 export interface SliderProps {
+  /**
+   * default value
+   */
   defaultValue?: number;
+
+  /**
+   * take effect when the mouse-moving or touch-moving
+   * @param value
+   */
   onChange?(value: number): void;
+
+  /**
+   * take effect when release the mouse or raise your hand
+   * @param value
+   */
   onChangeEnd?(value: number): void;
 }
 
@@ -44,16 +57,20 @@ export default function Slider(props: SliderProps) {
     },
   }
 
+  React.useEffect(() => {
+    if (!isActived && onChangeEnd) onChangeEnd(position.x);
+  }, [isActived])
+
   return (
     <div
       ref={ref as React.LegacyRef<HTMLDivElement>}
-      className={'smede-slider'}
+      className={'usine-slider'}
       style={styles.slider}
     >
-      <div className={'smede-slider-track'} style={styles.track}>
-        <div className={'smede-slider-track-filled'} style={styles.filled}>
+      <div className={'usine-slider-track'} style={styles.track}>
+        <div className={'usine-slider-track-filled'} style={styles.filled}>
         </div>
-        <div className={'smede-slider-thumb'} style={styles.thumb}></div>
+        <div className={'usine-slider-thumb'} style={styles.thumb}></div>
       </div>
     </div>
   )
